@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Quicksand:wght@300..700&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --font-lilita: "Lilita One", serif;
+  --font-quicksand: "Quicksand", sans-serif;
+  --color-primary: #2a3335;
+  --color-secondary: #fff2db;
+  --color-tersier: #fac67a;
+  /* --color-primary: #22177a; */
+  /* --color-primary: #f3ede4; */
+}
