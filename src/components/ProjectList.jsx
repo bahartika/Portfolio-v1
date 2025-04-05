@@ -6,7 +6,7 @@ const ProjectList = () => {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const selectedRepos = ["Graphic-design-style", "Geography-of-Indonesia", "Milky-way"];
+  const selectedRepos = ["Masjid-Alkandari", "Graphic-design-style", "Geography-of-Indonesia", "Milky-way", "pnc-room-workers", "Self-photo-website", "Notes-App", "Bookshelf-App", "spa-notes-app"];
   const username = "bahartika";
 
   useEffect(() => {
@@ -50,7 +50,18 @@ const ProjectList = () => {
     return (
       <section className="md:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center pb-10 px-10">
         <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-16">Project List</h3>
-        <p className="text-secondary">Loading...</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+          {Array(selectedRepos.length)
+            .fill(0)
+            .map((_, index) => (
+              <div key={index} className="border-2 border-secondary bg-primary text-secondary w-full p-4 font-quicksand rounded-md animate-pulse">
+                <div className="h-30 w-full bg-gray-300 rounded-sm mb-4"></div>
+                <div className="h-6 bg-gray-300 rounded w-3/4 mb-2"></div>
+                <div className="h-4 bg-gray-300 rounded w-full mb-2"></div>
+                <div className="h-4 bg-blue-300 rounded w-1/4 mt-2"></div>
+              </div>
+            ))}
+        </div>
       </section>
     );
   }
@@ -75,7 +86,7 @@ const ProjectList = () => {
 
   return (
     <section className="md:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center pb-10 px-10">
-      <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-16">Project List</h3>
+      <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-16">My Projects</h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {repos.map((repo) => (
           <ProjectItem key={repo.id} repo={repo} />
@@ -86,19 +97,3 @@ const ProjectList = () => {
 };
 
 export default ProjectList;
-
-// import React from "react";
-// import ProjectItem from "./ProjectItem";
-
-// const ProjectList = () => {
-//   return (
-//     <section className="lg:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center pb-10 px-10">
-//       <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-16">Project List</h3>
-//       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-//         <ProjectItem />
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default ProjectList;

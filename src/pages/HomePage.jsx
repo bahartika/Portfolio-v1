@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Jumbotron from "../components/Jumbotron";
 import ProjectList from "../components/ProjectList";
+import Contact from "../components/Contact";
 import SkillList from "../components/SkillList";
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
     <div className="bg-primary">
       <Jumbotron />
       <ProjectList />
+      <Contact />
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-10">
         <h1 className="text-4xl font-bold mb-8">🎉 AOS di React + Vite 🎉</h1>
 
