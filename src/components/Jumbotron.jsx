@@ -6,11 +6,11 @@ const Header = () => {
   return (
     <header name="Header" className="pb-10 lg:h-screen w-full pt-30 lg:pt-10">
       {/* >= tablet */}
-      <div className="lg:w-3/4 mx-auto items-center justify-center h-full hidden md:flex">
+      <div className="lg:w-3/4 mx-auto items-center justify-center h-full hidden md:flex" data-aos="fade-up">
         <div className="text-left font-quicksand font-bold w-3/4 pl-10">
           <h1 className="flex text-3xl lg:text-6xl items-center text-secondary">
             Hello, I'm
-            <div className="mx-4 rounded-xl overflow-hidden hover:rotate-3 duration-200 hover:scale-110 ">
+            <div className="mx-4 rounded-xl overflow-hidden hover:rotate-3 duration-200 hover:scale-125 ">
               <img src={photo} alt="Bahartika's profile picture" width={75} />
             </div>
             Bahartika!

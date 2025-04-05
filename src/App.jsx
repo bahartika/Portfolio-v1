@@ -1,52 +1,32 @@
-// import { useEffect, useState, useMemo } from "react";
-// import "./styles/App.css";
-// import ThemeContext from "./context/ThemeContext";
-// import Navbar from "./components/Navbar";
-// import HomePage from "./pages/HomePage";
-
-// const App = () => {
-//   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-
-//   useEffect(() => {
-//     localStorage.setItem("theme", theme);
-//   }, [theme]);
-
-//   const toggleTheme = () => {
-//     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-//   };
-
-//   const themeContextValue = useMemo(() => {
-//     return {
-//       theme,
-//       toggleTheme,
-//     };
-//   }, [theme]);
-
-//   return (
-//     <>
-//       <ThemeContext.Provider value={themeContextValue}>
-//         <div data-theme={theme} className="App">
-//           <Navbar />
-//           <HomePage />
-//         </div>
-//       </ThemeContext.Provider>
-//     </>
-//   );
-// };
-
-// export default App;
-
-import React from "react";
-import "./styles/App.css";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
-import HomePage from "./pages/HomePage";
+import Jumbotron from "./components/Jumbotron";
+import ProjectList from "./components/ProjectList";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Certificate from "./components/Certificate";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 100, // Jarak offset dari elemen
+      duration: 1000, // Durasi animasi (dalam ms)
+      once: true, // Animasi hanya berjalan sekali
+      easing: "ease-in-out", // Efek pergerakan animasi
+    });
+  }, []);
+
   return (
-    <>
+    <div className="bg-primary">
       <Navbar />
-      <HomePage />
-    </>
+      <Jumbotron />
+      <ProjectList />
+      <Certificate />
+      <Contact />
+      <Footer />
+    </div>
   );
 };
 

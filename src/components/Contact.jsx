@@ -1,37 +1,48 @@
-const Contact = () => {
+import React from "react";
+
+const ContactSection = () => {
   return (
-    <section id="contact" className="py-12 text-center">
-      <h2 className="text-2xl font-bold mb-4">📫 Contact</h2>
-      <p className="mb-6">Silakan hubungi saya melalui platform berikut:</p>
+    <section className="text-secondary w-3/4 mx-auto py-12 md:px-10 md:py-20 font-quicksand" id="contact">
+      <div className="grid md:grid-cols-2 gap-12">
+        <div data-aos="fade-right">
+          <h1 className="text-5xl md:text-6xl font-lilita mb-6 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text font-extrabold text-transparent">GET IN TOUCH</h1>
+          <p className="mb-4 text-sm">bahartikasatriawijaya@mail.com</p>
+          <p className="text-sm max-w-md mb-8">Get to know who I am, what I do, and the story behind my personal and professional growth.</p>
 
-      <div className="flex flex-col items-center gap-3">
-        {/* Email */}
-        <a href="mailto:emailkamu@gmail.com" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
-          ✉️ emailkamu@gmail.com
-        </a>
+          <p className="text-sm mb-2">CONTACT</p>
 
-        {/* LinkedIn */}
-        <a href="https://linkedin.com/in/usernamekamu" target="_blank" rel="noreferrer" className="bg-[#0077B5] text-white px-4 py-2 rounded-full hover:brightness-110 transition">
-          🔗 LinkedIn
-        </a>
+          <div className="flex flex-wrap gap-4 text-sm mt-6 text-secondary">
+            {["INSTAGRAM", "LINKEDIN"].map((platform) => (
+              <a key={platform} href="#" className="underline underline-offset-4 hover:text-tersier">
+                {platform} ↗
+              </a>
+            ))}
+          </div>
+        </div>
 
-        {/* GitHub */}
-        <a href="https://github.com/usernamekamu" target="_blank" rel="noreferrer" className="bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-700 transition">
-          💻 GitHub
-        </a>
+        <div className="flex flex-col justify-between" data-aos="fade-left">
+          <div>
+            <div className="mb-4 text-sm">
+              <p>+628121438920</p>
+            </div>
+            <div className="text-sm mb-6">
+              <p className="font-semibold mb-1">UNITED STATES</p>
+              <p>EXPERIENCE UNMATCHED LUXURY WITH OUR PREMIUM LEATHER BAGS, EXPERTLY</p>
+            </div>
+            <div className="text-sm">
+              <p className="font-semibold mb-1">DENMARK</p>
+              <p>EXPERIENCE UNMATCHED LUXURY WITH OUR PREMIUM LEATHER BAGS, EXPERTLY</p>
+            </div>
+          </div>
 
-        {/* WhatsApp */}
-        <a href="https://wa.me/6281234567890" target="_blank" rel="noreferrer" className="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-600 transition">
-          💬 WhatsApp
-        </a>
-
-        {/* Instagram */}
-        <a href="https://instagram.com/usernamekamu" target="_blank" rel="noreferrer" className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white px-4 py-2 rounded-full hover:brightness-110 transition">
-          📸 Instagram
-        </a>
+          <div className="flex justify-between items-end mt-8">
+            <img src="/path-to-your-image.jpg" alt="Contact visual" className="w-32 h-auto object-cover" />
+            <div className="text-4xl font-bold">© 2025</div>
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
-export default Contact;
+export default ContactSection;

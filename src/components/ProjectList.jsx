@@ -46,52 +46,43 @@ const ProjectList = () => {
     fetchData();
   }, []);
 
+  let content;
+
   if (loading) {
-    return (
-      <section className="md:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center pb-10 px-10">
-        <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-16">Project List</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-          {Array(selectedRepos.length)
-            .fill(0)
-            .map((_, index) => (
-              <div key={index} className="border-2 border-secondary bg-primary text-secondary w-full p-4 font-quicksand rounded-md animate-pulse">
-                <div className="h-30 w-full bg-gray-300 rounded-sm mb-4"></div>
-                <div className="h-6 bg-gray-300 rounded w-3/4 mb-2"></div>
-                <div className="h-4 bg-gray-300 rounded w-full mb-2"></div>
-                <div className="h-4 bg-blue-300 rounded w-1/4 mt-2"></div>
-              </div>
-            ))}
-        </div>
-      </section>
+    content = (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+        {Array(selectedRepos.length)
+          .fill(0)
+          .map((_, index) => (
+            <div key={index} className="border-2 border-secondary bg-primary text-secondary w-full p-4 font-quicksand rounded-md animate-pulse">
+              <div className="h-30 w-full bg-gray-300 rounded-sm mb-4"></div>
+              <div className="h-6 bg-gray-300 rounded w-3/4 mb-2"></div>
+              <div className="h-4 bg-gray-300 rounded w-full mb-2"></div>
+              <div className="h-4 bg-blue-300 rounded w-1/4 mt-2"></div>
+            </div>
+          ))}
+      </div>
     );
-  }
-
-  if (error) {
-    return (
-      <section className="md:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center pb-10 px-10">
-        <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-16">Project List</h3>
-        <p className="text-secondary">Terjadi kesalahan: {error.message}</p>
-      </section>
-    );
-  }
-
-  if (!repos.length) {
-    return (
-      <section className="md:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center pb-10 px-10">
-        <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-16">Project List</h3>
-        <p className="text-secondary">Tidak ada proyek yang cocok.</p>
-      </section>
-    );
-  }
-
-  return (
-    <section className="md:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center pb-10 px-10">
-      <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-16">My Projects</h3>
+  } else if (error) {
+    content = <p className="text-secondary font-quicksand">Terjadi kesalahan: {error.message}</p>;
+  } else if (!repos.length) {
+    content = <p className="text-secondary font-quicksand">Tidak ada proyek yang cocok.</p>;
+  } else {
+    content = (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {repos.map((repo) => (
           <ProjectItem key={repo.id} repo={repo} />
         ))}
       </div>
+    );
+  }
+
+  return (
+    <section className="md:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center pb-10 px-10">
+      <div data-aos="fade-up">
+        <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-16">My Projects</h3>
+      </div>
+      {content}
     </section>
   );
 };

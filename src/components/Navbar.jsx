@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
-import ThemeButton from "./ThemeButton";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -20,6 +19,9 @@ const Navbar = () => {
         </Link>
         <Link spy={true} smooth={true} to="Project">
           <li className="my-4 py-4 border-b border-secondary">Project</li>
+        </Link>
+        <Link spy={true} smooth={true} to="Certificate">
+          <li className="my-4 py-4 border-b border-secondary">Certificate</li>
         </Link>
         <Link spy={true} smooth={true} to="Contact">
           <li className="my-4 py-4 border-b border-secondary">Contact</li>
@@ -44,6 +46,9 @@ const Navbar = () => {
             </Link>
             <Link spy={true} smooth={true} to="Project">
               <li>Project</li>
+            </Link>
+            <Link spy={true} smooth={true} to="Certificate">
+              <li>Certificate</li>
             </Link>
             <Link spy={true} smooth={true} to="Contact">
               <li>Contact</li>
