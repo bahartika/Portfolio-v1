@@ -3,15 +3,15 @@ import Photo from "../assets/Photo.jpg";
 
 const About = () => {
   return (
-    <section className="md:w-3/4 mx-auto bg-primary flex items-center justify-center pb-10 px-10 flex-col lg:flex-row" id="about">
+    <section className="md:w-3/4 mx-auto bg-primary flex items-center justify-center pb-10 md:px-10 flex-col lg:flex-row" id="about">
       {/* Left Image */}
-      <div className="lg:w-1/2 rounded-t-2xl overflow-hidden">
+      <div className="lg:w-1/2 rounded-t-2xl overflow-hidden hidden md:block">
         <img src={Photo} alt="Person standing on books" className="w-full h-full object-cover" />
       </div>
 
       {/* Right Content */}
       <div className="lg:w-1/2 p-8">
-        <h3 className="text-3xl flex items-center gap-2 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-6 py-1.5 font-lilita">
+        <h3 className="text-4xl flex items-center gap-2 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-6 py-1.5 font-lilita">
           About me! <span className="text-4xl">⚜</span>
         </h3>
 
