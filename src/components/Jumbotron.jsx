@@ -4,7 +4,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Header = () => {
   return (
-    <header name="Header" className="pb-10 lg:h-screen w-full pt-30 lg:pt-10">
+    <header name="Header" className="pb-10 lg:h-screen w-full pt-30 lg:pt-10" id="home">
       {/* >= tablet */}
       <div className="lg:w-3/4 mx-auto items-center justify-center h-full hidden md:flex" data-aos="fade-up">
         <div className="text-left font-quicksand font-bold w-3/4 pl-10">

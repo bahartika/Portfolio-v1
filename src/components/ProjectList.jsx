@@ -64,9 +64,9 @@ const ProjectList = () => {
       </div>
     );
   } else if (error) {
-    content = <p className="text-secondary font-quicksand">Terjadi kesalahan: {error.message}</p>;
+    content = <p className="text-secondary font-quicksand">Error: {error.message}</p>;
   } else if (!repos.length) {
-    content = <p className="text-secondary font-quicksand">Tidak ada proyek yang cocok.</p>;
+    content = <p className="text-secondary font-quicksand">No matching projects.</p>;
   } else {
     content = (
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -78,9 +78,9 @@ const ProjectList = () => {
   }
 
   return (
-    <section className="md:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center pb-10 px-10">
-      <div data-aos="fade-up">
-        <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-16">My Projects</h3>
+    <section className="md:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center pb-10 px-10" id="project">
+      <div data-aos="fade-up" className="w-full">
+        <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-10 py-1.5 text-center md:text-left">My Projects</h3>
       </div>
       {content}
     </section>

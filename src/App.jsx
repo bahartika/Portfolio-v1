@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
+import About from "./components/About";
 import ProjectList from "./components/ProjectList";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -22,6 +23,7 @@ const App = () => {
     <div className="bg-primary">
       <Navbar />
       <Jumbotron />
+      <About />
       <ProjectList />
       <Certificate />
       <Contact />

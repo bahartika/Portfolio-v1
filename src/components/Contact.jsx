@@ -1,6 +1,21 @@
 import React from "react";
 
 const ContactSection = () => {
+  const socialLinks = [
+    {
+      name: "INSTAGRAM",
+      href: "https://www.instagram.com/bahartikaa/",
+    },
+    {
+      name: "LINKEDIN",
+      href: "https://www.linkedin.com/in/bahartika-satria-wijaya/",
+    },
+    {
+      name: "WHATSAPP",
+      href: "https://wa.link/tfkv3m",
+    },
+  ];
+
   return (
     <section className="text-secondary w-3/4 mx-auto py-12 md:px-10 md:py-20 font-quicksand" id="contact">
       <div className="grid md:grid-cols-2 gap-12">
@@ -12,9 +27,9 @@ const ContactSection = () => {
           <p className="text-sm mb-2">CONTACT</p>
 
           <div className="flex flex-wrap gap-4 text-sm mt-6 text-secondary">
-            {["INSTAGRAM", "LINKEDIN"].map((platform) => (
-              <a key={platform} href="#" className="underline underline-offset-4 hover:text-tersier">
-                {platform} ↗
+            {socialLinks.map(({ name, href }) => (
+              <a key={name} href={href} className="underline underline-offset-4 hover:text-tersier" target="_blank" rel="noopener noreferrer">
+                {name} ↗
               </a>
             ))}
           </div>
@@ -22,16 +37,9 @@ const ContactSection = () => {
 
         <div className="flex flex-col justify-between" data-aos="fade-left">
           <div>
-            <div className="mb-4 text-sm">
-              <p>+628121438920</p>
-            </div>
-            <div className="text-sm mb-6">
-              <p className="font-semibold mb-1">UNITED STATES</p>
-              <p>EXPERIENCE UNMATCHED LUXURY WITH OUR PREMIUM LEATHER BAGS, EXPERTLY</p>
-            </div>
-            <div className="text-sm">
-              <p className="font-semibold mb-1">DENMARK</p>
-              <p>EXPERIENCE UNMATCHED LUXURY WITH OUR PREMIUM LEATHER BAGS, EXPERTLY</p>
+            <div className="text-sm mb-6 uppercase">
+              <p className="font-semibold mb-1">Bandung, West Java</p>
+              <p>Responsive by design — both in your interface and your lifestyle.</p>
             </div>
           </div>
 

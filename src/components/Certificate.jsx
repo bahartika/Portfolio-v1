@@ -10,12 +10,12 @@ function Certificate() {
   };
 
   return (
-    <div className="relative">
-      <div className="w-full px-10 sm:px-8 md:px-10 lg:px-20 lg:w-3/4 mx-auto py-10 sm:py-16">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl mb-4 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text font-extrabold text-transparent text-center" data-aos="fade-up">
+    <section className="relative" id="certificate">
+      <div className="w-full px-10 sm:px-8 md:px-10 lg:w-3/4 mx-auto py-10 sm:py-16">
+        <h3 className="text-3xl sm:text-4xl md:text-5xl mb-4 py-1.5 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text font-extrabold text-transparent text-center md:text-left font-lilita" data-aos="fade-up">
           My Learning Achievements
-        </h1>
-        <p className="sm:text-lg mb-6 font-quicksand text-secondary text-center">A collection of courses and certifications that showcase my dedication to learning and self-improvement.</p>
+        </h3>
+        <p className="sm:text-lg mb-6 font-quicksand text-secondary text-center md:text-left">A collection of courses and certifications that showcase my dedication to learning and self-improvement.</p>
 
         <div>
           {data.map((faq, index) => (
@@ -42,7 +42,7 @@ function Certificate() {
           <img src={selectedImage} alt="Certificate Full" className="max-w-full max-h-[90%] rounded-lg shadow-xl border-4 border-white object-contain" />
         </div>
       )}
-    </div>
+    </section>
   );
 }
 
