@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../assets/logo.png";
 
 const ContactSection = () => {
   const socialLinks = [
@@ -19,7 +20,7 @@ const ContactSection = () => {
   return (
     <section className="text-secondary w-3/4 mx-auto py-12 md:px-10 md:py-20 font-quicksand" id="contact">
       <div className="grid md:grid-cols-2 gap-12">
-        <div data-aos="fade-right">
+        <div data-aos="fade-up-right" data-aos-duration="3000">
           <h1 className="text-5xl md:text-6xl font-lilita mb-6 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text font-extrabold text-transparent">GET IN TOUCH</h1>
           <p className="mb-4 text-sm">bahartikasatriawijaya@mail.com</p>
           <p className="text-sm max-w-md mb-8">Get to know who I am, what I do, and the story behind my personal and professional growth.</p>
@@ -35,7 +36,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between" data-aos="fade-left">
+        <div className="flex flex-col justify-between" data-aos="fade-up-left" data-aos-duration="3000">
           <div>
             <div className="text-sm mb-6 uppercase">
               <p className="font-semibold mb-1">Bandung, West Java</p>
@@ -44,7 +45,7 @@ const ContactSection = () => {
           </div>
 
           <div className="flex justify-between items-end mt-8">
-            <img src="/path-to-your-image.jpg" alt="Contact visual" className="w-32 h-auto object-cover" />
+            <img src={Logo} alt="Contact visual" className="w-32 h-auto object-cover" />
             <div className="text-4xl font-bold">© 2025</div>
           </div>
         </div>

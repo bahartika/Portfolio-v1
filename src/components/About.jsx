@@ -1,43 +1,75 @@
 import React from "react";
+import { SiReact, SiTailwindcss, SiFramer, SiGithub } from "react-icons/si";
 import Photo from "../assets/Photo.jpg";
 
 const About = () => {
   return (
     <section className="md:w-3/4 mx-auto bg-primary flex items-center justify-center pb-10 md:px-10 flex-col lg:flex-row" id="about">
       {/* Left Image */}
-      <div className="lg:w-1/2 rounded-t-2xl overflow-hidden hidden md:block">
+      <div className="lg:w-1/3 rounded-t-2xl overflow-hidden hidden md:block">
         <img src={Photo} alt="Person standing on books" className="w-full h-full object-cover" />
       </div>
 
       {/* Right Content */}
-      <div className="lg:w-1/2 p-8">
-        <h3 className="text-4xl flex items-center gap-2 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-6 py-1.5 font-lilita">
+      <div className="lg:w-2/3 p-8">
+        <h3 className="text-4xl flex items-center gap-2 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-4 py-1.5 font-lilita">
           About me! <span className="text-4xl">⚜</span>
         </h3>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-secondary font-quicksand">
-          {/* Item 1 */}
-          <div>
+        <div className="text-secondary font-quicksand space-y-8">
+          <div className="w-full">
             <h3 className="font-semibold text-lg">My Journey</h3>
-            <p className="text-sm">I started my journey in graphic design and gradually transitioned into front-end development with ReactJS and TailwindCSS. Every project reflects my growth, creativity, and passion for clean UI.</p>
+            <p className="text-sm">
+              From telecommunications to front-end development, I now craft modern interfaces using ReactJS and TailwindCSS. I focus on clear communication, user-centered design, and smooth user experience. I'm not just a coder—I’m your
+              creative partner, ready to bring your ideas to life visually and technically.
+            </p>
           </div>
 
-          {/* Item 2 */}
-          <div>
-            <h3 className="font-semibold text-lg">My Services</h3>
-            <p className="text-sm">I offer modern, responsive web development services, including landing pages, portfolios, and interactive web apps—custom-tailored to your brand and vision.</p>
-          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* My Services */}
+            <div>
+              <h3 className="font-semibold text-lg">My Services</h3>
+              <div className="space-y-2">
+                <p>
+                  ✨ <span>Responsive web development</span>
+                </p>
+                <p>
+                  🎯 <span>Custom landing pages</span>
+                </p>
+                <p>
+                  🧩 <span>Personal portfolios</span>
+                </p>
+                <p>
+                  ⚡ <span>Interactive web apps</span>
+                </p>
+                <p>
+                  🎨 <span>Brand-focused designs</span>
+                </p>
+              </div>
+            </div>
 
-          {/* Item 3 */}
-          <div>
-            <h3 className="font-semibold text-lg">Why Me?</h3>
-            <p className="text-sm">I focus on clear communication, user-centered design, and smooth user experience. I'm not just a coder—I’m your creative partner, ready to bring your ideas to life visually and technically.</p>
-          </div>
-
-          {/* Item 4 */}
-          <div>
-            <h3 className="font-semibold text-lg">Tech Stack</h3>
-            <p className="text-sm">My projects are built with ReactJS, TailwindCSS, Framer Motion, AOS, and GitHub API—technologies chosen for their speed, flexibility, and ability to create dynamic interfaces.</p>
+            {/* Tech Stack */}
+            <div>
+              <h3 className="font-semibold text-lg">Tech Stack</h3>
+              <p className="flex flex-wrap gap-4 items-center mt-2 text-secondary">
+                <span className="flex items-center gap-2">
+                  <SiReact className="text-xl text-sky-500" />
+                  ReactJS
+                </span>
+                <span className="flex items-center gap-2">
+                  <SiTailwindcss className="text-xl text-cyan-400" />
+                  TailwindCSS
+                </span>
+                <span className="flex items-center gap-2">
+                  <SiFramer className="text-xl text-pink-400" />
+                  Framer Motion
+                </span>
+                <span className="flex items-center gap-2">
+                  <SiGithub className="text-xl dark:text-white" />
+                  GitHub API
+                </span>
+              </p>
+            </div>
           </div>
         </div>
       </div>
