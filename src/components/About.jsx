@@ -1,13 +1,13 @@
 import React from "react";
 import { SiReact, SiTailwindcss, SiFramer, SiGithub } from "react-icons/si";
-import Photo from "../assets/Photo.jpg";
+import photo from "../assets/photo.jpg";
 
 const About = () => {
   return (
     <section className="w-full md:w-3/4 mx-auto bg-primary flex items-center justify-center pb-10 md:px-10 flex-col lg:flex-row" id="about">
       {/* Left Image */}
       <div className="lg:w-1/3 rounded-t-2xl overflow-hidden hidden md:block">
-        <img src={Photo} alt="Person standing on books" className="w-full h-full hover:scale-120 hover:bg-bottom transition duration-300" />
+        <img src={photo} alt="Bahartika's profile picture" className="w-full h-full hover:scale-120 hover:bg-bottom transition duration-300" />
       </div>
 
       {/* Right Content */}
@@ -29,7 +29,7 @@ const About = () => {
             {/* My Services */}
             <div>
               <h3 className="font-semibold text-lg">My Services</h3>
-              <div className="space-y-2">
+              <div className="space-y-2 text-xl">
                 <p>
                   ✨ <span>Responsive web development</span>
                 </p>
