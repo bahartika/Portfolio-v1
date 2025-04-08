@@ -20,7 +20,7 @@ const ContactSection = () => {
   return (
     <section className="text-secondary w-3/4 mx-auto py-12 md:px-10 md:py-20 font-quicksand" id="contact">
       <div className="grid md:grid-cols-2 gap-12">
-        <div data-aos="fade-up-right" data-aos-duration="3000">
+        <div data-aos="fade-up-right" data-aos-duration="2000">
           <h1 className="text-5xl md:text-6xl font-lilita mb-6 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text font-extrabold text-transparent">GET IN TOUCH</h1>
           <p className="mb-4 text-sm">bahartikasatriawijaya@mail.com</p>
           <p className="text-sm max-w-md mb-8">Get to know who I am, what I do, and the story behind my personal and professional growth.</p>
@@ -36,7 +36,7 @@ const ContactSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between" data-aos="fade-up-left" data-aos-duration="3000">
+        <div className="flex flex-col justify-between" data-aos="fade-up-left" data-aos-duration="2000">
           <div>
             <div className="text-sm mb-6 uppercase">
               <p className="font-semibold mb-1">Bandung, West Java</p>

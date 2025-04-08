@@ -8,13 +8,13 @@ const data = [
   {
     title: "Belajar Dasar Pemrograman Web",
     description:
-      "I have built a strong foundation in web development by learning HTML for structuring web pages (including semantic elements, attributes, and content organization), CSS for styling (covering selectors, text and color styling, box model, positioning, and media queries), and mastering responsive layout techniques using Flexbox—culminating in the implementation and refinement of a simple website project.",
+      "I have built a strong foundation in web development by learning HTML for structuring web pages (including semantic elements, attributes, and content organization), CSS for styling (covering selectors, text and color styling, box model, positioning, and media queries), and mastering responsive layout techniques using Flexbox.",
     image: dasarWeb,
   },
   {
     title: "Belajar Dasar Pemrograman JavaScript",
     description:
-      "I have comprehensively studied JavaScript, covering the use of runtime environments (Browser, Node.js, Bun, Deno), core syntax, functions, data structures, program flow, modularization, Object-Oriented and Functional Programming paradigms, asynchronous processing, and writing high-quality, secure, and well-tested code.",
+      "I have comprehensively studied JavaScript, covering the use of runtime environments (Browser, Node.js, Bun), core syntax, functions, data structures, program flow, modularization, Object-Oriented and Functional Programming paradigms, asynchronous processing, and writing high-quality, secure, and well-tested code.",
     image: dasarJS,
   },
   {

@@ -12,7 +12,7 @@ function Certificate() {
   return (
     <section className="relative" id="certificate">
       <div className="md:w-3/4 mx-auto px-10 py-10 sm:py-16">
-        <h3 className="text-3xl sm:text-4xl md:text-5xl mb-4 py-1.5 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text font-extrabold text-transparent text-center md:text-left font-lilita" data-aos="fade-up">
+        <h3 className="text-4xl md:text-5xl mb-4 py-1.5 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text font-extrabold text-transparent text-center md:text-left font-lilita" data-aos="fade-up">
           My Learning Achievements
         </h3>
         <p className="sm:text-lg mb-6 font-quicksand text-secondary text-center md:text-left">A collection of courses and certifications that showcase my dedication to learning and self-improvement.</p>

@@ -1,12 +1,30 @@
-# React + Vite
+# 🌐 portfolio-v1
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Thumbnail](./src/assets/thumbnail.png)
 
-Currently, two official plugins are available:
+Hi there! 👋  
+This is my personal portfolio website built with **ReactJS** and **Tailwind CSS**. It includes my intro, about me, project showcase, contact section, and a custom cursor effect to make it a bit more fun ✨
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Features
 
-## Expanding the ESLint configuration
+- Responsive landing page
+- "About Me" section
+- Projects showcase
+- Contact form
+- Custom gradient cursor effect
+- Clean, smooth scroll navigation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Tech Stack
+
+- [ReactJS](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Scroll](https://www.npmjs.com/package/react-scroll)
+- [AOS - Animate on Scroll](https://michalsnik.github.io/aos/)
+
+## 📬 Contact
+
+Feel free to reach out if you’d like to connect or collaborate:
+
+- Email: bahartikasatriawijaya@gmail.com
+- instagram: instagram.com/bahartikaa
+- LinkedIn: bahartika satria wijaya

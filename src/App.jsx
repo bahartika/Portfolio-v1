@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -9,6 +10,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Certificate from "./components/Certificate";
 
+import useCanvasCursor from "./hooks/useCanvasCursor";
+
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -19,8 +22,14 @@ const App = () => {
     });
   }, []);
 
+  const CanvasCursor = () => {
+    useCanvasCursor();
+    return <canvas className="pointer-events-none fixed inset-0" id="canvas" />;
+  };
+
   return (
-    <div className="bg-primary">
+    <div className="bg-primary select-none">
+      <CanvasCursor />
       <Navbar />
       <Jumbotron />
       <About />
