@@ -78,7 +78,7 @@ const ProjectList = () => {
   }
 
   return (
-    <section className="w-full md:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center py-10 px-10" id="project">
+    <section className="w-full md:w-3/4 mx-auto bg-primary flex flex-col items-center justify-center pt-20 pb-10 px-10" id="project">
       <div data-aos="fade-up" className="w-full">
         <h3 className="text-4xl font-lilita bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text md:text-5xl font-extrabold text-transparent mb-10 py-1.5 text-center md:text-left">My Projects</h3>
       </div>

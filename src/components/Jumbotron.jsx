@@ -9,7 +9,7 @@ const Header = () => {
         <div className="text-center md:text-left font-quicksand font-bold w-full md:w-3/4 lg:pl-8">
           <h1 className="text-2xl md:text-4xl lg:text-6xl text-secondary flex flex-col md:flex-row items-center justify-center md:justify-start">
             Hello, I'm
-            <div className="md:mx-4 rounded-xl overflow-hidden hover:rotate-3 duration-200 hover:scale-125">
+            <div className="md:mx-4 my-2 rounded-xl overflow-hidden hover:rotate-3 duration-200 hover:scale-125">
               <img src={photo} alt="Bahartika's profile picture" className="w-20 md:w-[75px]" />
             </div>
             Bahartika!
@@ -19,7 +19,7 @@ const Header = () => {
             I'm a <span className="text-tersier">Front-end Web Developer</span> and
           </h2>
 
-          <div className="flex flex-col md:flex-row items-center justify-center md:justify-start mt-2">
+          <div className="flex flex-col md:flex-row items-center justify-center md:justify-start mt-1">
             <h2 className="text-2xl md:text-4xl">
               <span className="text-tersier">Graphic Designer.</span>
             </h2>

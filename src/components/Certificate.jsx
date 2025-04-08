@@ -11,7 +11,7 @@ function Certificate() {
 
   return (
     <section className="relative w-full" id="certificate">
-      <div className="md:w-3/4 mx-auto px-10 py-10 sm:py-16">
+      <div className="md:w-3/4 mx-auto px-10 md:pb-10 md:pt-30 py-16">
         <h3 className="text-4xl md:text-5xl mb-4 py-1.5 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text font-extrabold text-transparent text-center md:text-left font-lilita" data-aos="fade-up">
           My Learning Achievements
         </h3>
