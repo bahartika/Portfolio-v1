@@ -18,7 +18,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section className="text-secondary w-3/4 mx-auto py-12 md:px-10 md:py-20 font-quicksand" id="contact">
+    <section className="text-secondary w-full md:w-3/4 mx-auto py-12 md:px-10 md:py-20 font-quicksand" id="contact">
       <div className="grid md:grid-cols-2 gap-12">
         <div data-aos="fade-up-right" data-aos-duration="2000">
           <h1 className="text-5xl md:text-6xl font-lilita mb-6 bg-linear-to-br/oklch from-secondary to-tersier bg-clip-text font-extrabold text-transparent">GET IN TOUCH</h1>

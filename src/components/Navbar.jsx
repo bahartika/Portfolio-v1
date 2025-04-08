@@ -11,7 +11,7 @@ const Navbar = () => {
   const closeMenu = () => setClick(false);
 
   return (
-    <nav className="flex justify-between text-secondary py-6 px-8 lg:px-14 fixed left-1/2 transform -translate-x-1/2 w-screen z-10 font-quicksand bg-primary lg:bg-primary/80 backdrop-blur-md md:w-3/4">
+    <nav className="flex justify-between text-secondary py-6 px-8 lg:px-14 fixed left-1/2 transform -translate-x-1/2 w-screen z-10 font-quicksand bg-primary lg:bg-primary md:w-3/4">
       {/* <div className="flex items-center justify-between md:w-3/4 mx-auto border-2"> */}
       <div className="flex items-center flex-1">
         <Link to="home" smooth={true} duration={800} className="cursor-pointer">

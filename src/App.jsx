@@ -28,7 +28,7 @@ const App = () => {
   };
 
   return (
-    <div className="bg-primary select-none">
+    <div className="bg-primary select-none border-2">
       <CanvasCursor />
       <Navbar />
       <Jumbotron />
