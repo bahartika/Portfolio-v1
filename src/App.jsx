@@ -15,10 +15,10 @@ import useCanvasCursor from "./hooks/useCanvasCursor";
 const App = () => {
   useEffect(() => {
     AOS.init({
-      offset: 100, // Jarak offset dari elemen
-      duration: 1000, // Durasi animasi (dalam ms)
-      once: true, // Animasi hanya berjalan sekali
-      easing: "ease-in-out", // Efek pergerakan animasi
+      offset: 100,
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
     });
   }, []);
 
@@ -28,7 +28,7 @@ const App = () => {
   };
 
   return (
-    <div className="bg-primary select-none border-2">
+    <div className="bg-primary select-none">
       <CanvasCursor />
       <Navbar />
       <Jumbotron />
