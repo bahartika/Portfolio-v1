@@ -9,8 +9,7 @@ import ProjectList from "./components/ProjectList";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Certificate from "./components/Certificate";
-
-import useCanvasCursor from "./hooks/useCanvasCursor";
+import CanvasCursor from "./components/CanvasCursor";
 
 const App = () => {
   useEffect(() => {
@@ -22,13 +21,8 @@ const App = () => {
     });
   }, []);
 
-  const CanvasCursor = () => {
-    useCanvasCursor();
-    return <canvas className="pointer-events-none fixed inset-0" id="canvas" />;
-  };
-
   return (
-    <div className="bg-primary select-none">
+    <main className="bg-primary select-none">
       <CanvasCursor />
       <Navbar />
       <Jumbotron />
@@ -37,7 +31,7 @@ const App = () => {
       <Certificate />
       <Contact />
       <Footer />
-    </div>
+    </main>
   );
 };
 
