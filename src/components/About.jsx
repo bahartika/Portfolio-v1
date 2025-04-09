@@ -4,7 +4,7 @@ import photo from "../assets/photo.jpg";
 
 const About = () => {
   return (
-    <section className="w-full md:w-3/4 mx-auto bg-primary flex items-center justify-center pt-10 md:px-10 flex-col lg:flex-row" id="about">
+    <section className="w-full md:w-3/4 mx-auto bg-primary flex items-center justify-center pt-10 px-10 flex-col lg:flex-row" id="about">
       {/* Left Image */}
       <div data-aos="zoom-in" className="lg:w-2/5 rounded-t-2xl overflow-hidden hidden md:block">
         <img src={photo} alt="Bahartika's profile picture" className="w-96 lg:w-full h-full hover:scale-120 hover:bg-bottom transition duration-300" />

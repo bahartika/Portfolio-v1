@@ -16,7 +16,7 @@ const ProjectItem = ({ repo }) => {
         <div>
           {repo.homepage && (
             <a href={repo.homepage} target="_blank" rel="noopener noreferrer" className="bg-secondary w-fit rounded-lg text-primary px-4 py-2 text-sm font-bold hover:bg-primary hover:text-tersier transition">
-              Lihat Website
+              View Website
             </a>
           )}
         </div>
