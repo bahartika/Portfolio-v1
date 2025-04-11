@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import Certificate from "./components/Certificate";
 import CanvasCursor from "./components/CanvasCursor";
 
-const App = () => {
+const PortfolioApp = () => {
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -35,4 +35,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default PortfolioApp;

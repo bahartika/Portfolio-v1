@@ -190,7 +190,7 @@ const ProjectList = () => {
 
           {/* Tombol hanya muncul kalau mobile dan masih ada sisa project */}
           {isMobile && visibleCount < repos.length && (
-            <button onClick={handleLoadMore} className="mt-8 px-6 py-2 rounded-full font-bold text-primary bg-secondary hover:bg-primary hover:text-tersier transition font-quicksand cursor-pointer">
+            <button onClick={handleLoadMore} className="mt-8 px-6 py-2 rounded-lg font-bold text-primary bg-secondary hover:bg-primary hover:text-tersier transition font-quicksand cursor-pointer">
               Load More
             </button>
           )}

@@ -24,7 +24,7 @@ const Jumbotron = () => {
               <span className="text-tersier">Graphic Designer.</span>
             </h2>
             <span className="mt-4 md:mt-0 md:ml-3 text-sm md:text-lg rounded-full px-4 py-1 text-primary bg-secondary flex items-center gap-2 hover:-rotate-6 duration-200">
-              <div className="w-2 h-2 bg-teal-400 rounded-full blur-[1px]"></div>
+              <div className="w-2 h-2 bg-teal-400 rounded-full blur-[1px] animate-ping"></div>
               Open to work
             </span>
           </div>

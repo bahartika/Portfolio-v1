@@ -1,5 +1,5 @@
 import React from "react";
-import { SiReact, SiTailwindcss, SiFramer, SiGithub } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiBootstrap, SiReact, SiTailwindcss, SiGithub, SiFigma } from "react-icons/si";
 import photo from "../assets/photo.jpg";
 
 const About = () => {
@@ -20,8 +20,8 @@ const About = () => {
           <div className="w-full">
             <h3 className="font-semibold text-lg">My Journey</h3>
             <p className="text-sm">
-              From telecommunications to front-end development, I now craft modern interfaces using ReactJS and TailwindCSS. I focus on clear communication, user-centered design, and smooth user experience. I'm not just a coder—I’m your
-              creative partner, ready to bring your ideas to life visually and technically.
+              From telecommunications to front-end development, I now craft modern interfaces using ReactJS and TailwindCSS. I focus on clear communication and smooth user experience. I'm not just a coder, I’m your creative partner, ready
+              to bring your ideas to life visually and technically.
             </p>
           </div>
 
@@ -53,20 +53,36 @@ const About = () => {
               <h3 className="font-semibold text-lg">Tech Stack</h3>
               <p className="flex flex-wrap gap-4 items-center mt-2 text-secondary">
                 <span className="flex items-center gap-2">
-                  <SiReact className="text-xl text-sky-500" />
-                  ReactJS
+                  <SiHtml5 className="text-xl text-amber-500" />
+                  HTML5
+                </span>
+                <span className="flex items-center gap-2">
+                  <SiCss3 className="text-xl text-blue-400" />
+                  CSS
+                </span>
+                <span className="flex items-center gap-2">
+                  <SiJavascript className="text-xl text-yellow-400" />
+                  Javascript
+                </span>
+                <span className="flex items-center gap-2">
+                  <SiBootstrap className="text-xl text-violet-700" />
+                  Bootstrap
                 </span>
                 <span className="flex items-center gap-2">
                   <SiTailwindcss className="text-xl text-cyan-400" />
                   TailwindCSS
                 </span>
-                {/* <span className="flex items-center gap-2">
-                  <SiFramer className="text-xl text-pink-400" />
-                  Framer Motion
-                </span> */}
+                <span className="flex items-center gap-2">
+                  <SiReact className="text-xl text-sky-500" />
+                  ReactJS
+                </span>
                 <span className="flex items-center gap-2">
                   <SiGithub className="text-xl dark:text-white" />
                   GitHub API
+                </span>
+                <span className="flex items-center gap-2">
+                  <SiFigma className="text-xl dark:text-white" />
+                  Figma
                 </span>
               </p>
             </div>
